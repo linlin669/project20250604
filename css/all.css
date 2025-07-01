@@ -1,0 +1,465 @@
+*,*::before,*::after{
+	box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+
+/* layout通用 */
+.wrap{
+    max-width: 900px;
+    margin: 10px auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #334D2B;
+    padding: 15px 15px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+.nav li{
+    margin: 0 18px;
+}
+.nav a{
+    display: block;
+    padding: 14px 0;
+    color: #F7DA95;;
+}
+@media (max-width: 375px) {
+    .nav {
+        flex-direction: column;
+        width: 100%;      
+    }
+    .nav li{
+        width: 100%;
+        text-align: center;
+        /* margin-bottom: 8px; */
+    }
+    .nav a{
+        padding: 8px 0  ;
+    }
+}
+
+/* 首頁內容 */
+.content_index{
+    width: 100%;
+    position: relative;
+}
+.content_index img{
+    display: block;
+    width: 100%;
+}
+.content_index h3{
+    color: #fff;
+    font-size: 58px;
+    font-weight: bolder;
+    position: absolute;
+    top: 24%;
+    left: 10%;
+}
+.content_index a{
+    display: block;
+    border: 2px solid#fff;
+    border-radius: 40px ;
+    line-height: 1.5;
+    text-align: center;
+    padding: 8px 8px;
+    position: absolute;
+    right: 15%;
+    bottom: 10%;
+    color: #fff;
+}
+.content_index a:hover{
+    background: #fff;
+    color: #334D2B;
+
+}
+
+/* 關於我們內容 */
+.content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.side_box{
+    width: 29%;
+    position: relative;
+}
+.container_us{
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    padding: 15px;
+    margin-bottom: 150px;    
+}
+.side_box img{
+    display: block;
+    width: 100%;
+}
+.container h3{
+    color: #334D2B;
+    font-size: 33px;
+    font-weight: lighter;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.container p{
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+.container a{
+    color: #334D2B;
+    display: block; 
+    line-height: 1.5;
+}
+.container_bottom a{
+    width: 150px;
+    color: #334D2B;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    display: block;
+    padding: 12px 0;
+    border-radius: 40px 40px;
+    background: #F7DA95;
+    text-align: center;
+    align-self: flex-start;
+}
+.container_bottom a:hover{
+    color: #F7DA95;
+    background: #334D2B;
+}
+/* 聯絡我們 */
+
+
+/* 產品內容 */
+
+.content_cours h3{
+    color: #334D2B;
+    font-size: 33px;
+    font-weight: lighter;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.cours_box{
+    display: flex;
+    justify-content: space-between;
+}
+.cours{
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+.cours img{
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+.cours_s{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.cours_s h5{
+    width: 95px;
+    text-align: center;
+    line-height: 1.5;
+    background: rgba(185, 196, 72, 1);
+    color: rgba(51, 77, 43, 1);
+    padding: 8px;
+}
+.cours_s a{
+    display: block;
+    width: 95px;
+    text-align: center;
+    line-height: 1.5;
+    background: rgba(185, 196, 72, 1);
+    color: rgba(51, 77, 43, 1);
+    padding: 8px;
+    
+}
+.cours_s a:hover{
+    background: #334D2B;
+    color: rgba(185, 196, 72, 1);
+}
+.gocarBtn {
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    background: rgba(185, 196, 72, 1);
+    color: #334D2B;
+    padding: 8px ;
+    }
+.gocarBtn:hover{
+    background: #334D2B;
+    color:  rgba(185, 196, 72, 1);
+}
+@media (max-width: 768px){
+
+    .content_cours h3{
+        text-align: center;   
+    }
+    .content_cours2{
+       margin-left: 24px;
+    }
+    .cours_box{
+        flex-direction: column;
+        width: 50%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .content_list{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+}
+/* 產品內容2 */
+.content_list{
+    display: flex;
+    justify-content: space-around;
+
+}
+.boxlist_box img{
+    display: block;
+    max-width: 350px;
+    margin-bottom: 5px;
+}
+.boxlist_box{
+    flex-direction: column;
+    align-items: center;
+    
+}
+.content_cours2 h3{
+    color: #334D2B;
+    font-size: 33px;
+    font-weight: lighter;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.inforightbox2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+.cours_inforight{
+    max-width: 350px;
+
+}
+.inforightbox1{
+    background: #F7DA95;
+    border-radius: 7px;
+    padding: 14px;
+    
+}
+.inforightbox1 h4{
+    font-size: 39px;
+    font-weight: bold;
+    color: #334D2B;
+    letter-spacing: 5px;
+    margin-bottom: 14px;
+}
+.inforightbox1 p{
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+.inforightbox2 h5{
+    width: 48%;
+    text-align: center;
+    line-height: 1.5;
+    background: rgba(185, 196, 72, 1);
+    color: rgba(51, 77, 43, 1);
+    padding: 8px;
+}
+.inforightbox2 a{
+    display: block;
+    width: 48%;
+    text-align: center;
+    line-height: 1.5;
+    background: rgba(185, 196, 72, 1);
+    color: rgba(51, 77, 43, 1);
+    padding: 8px;
+      
+}
+.inforightbox2 a:hover{
+    background:  rgba(51, 77, 43, 1);
+    color: rgba(185, 196, 72, 1);
+}
+.gobackBtn{
+    width: 150px;
+    color: #334D2B;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    display: block;
+    padding: 12px 0;
+    border-radius: 40px 40px;
+    background: #F7DA95;
+    align-self: flex-start;
+    margin-top: 24px;
+    display: inline-block;
+}
+.gobackBtn:hover{
+    background: #334D2B;
+    color: #F7DA95;
+}
+
+/* 蜜棗教室 */
+.classroom_list{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 23px;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #334D2B;
+    border-radius: 10px 0 10px 0;
+    padding: 8px;
+}
+.classroom_list a{
+    color: #F7DA95;
+
+}
+.container_room{
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+}
+.container_room h3{
+    color: #334D2B;
+    font-size: 33px;
+    font-weight: lighter;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.info1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+.info1 img{
+    display: block;
+    width: 30%;
+
+}
+.info1 ul{
+    width: 69%;
+    margin-bottom: 8px;
+    padding: 10px;
+}
+.info1 h4{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.info1 p{
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+.room_bottom a{
+    width: 150px;
+    color: #334D2B;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    display: block;
+    padding: 12px 0;
+    border-radius: 40px 40px;
+    background: #F7DA95;
+    align-self: flex-start;     
+}
+.room_bottom a:hover{
+    color: #F7DA95;
+    background: #334D2B;
+}
+@media(max-width: 768px){
+    .car_box{
+        width: 50%;
+    }
+}
+
+/*購物車  */
+.content_car h3{
+    color: #334D2B;
+    font-size: 33px;
+    font-weight: lighter;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.order_list h4{
+    color: #334D2B;
+    font-size: 28px;
+    background: #F7DA95;
+    max-width: 900px;
+    padding: 16px 16px;
+    margin-bottom: 24px;
+}
+.price_name li{
+    color: #334D2B;
+    font-size: 24px;
+    display: flex;
+    margin-bottom: 14px;
+}
+.price_name li p,span{
+    margin-right: 24px;
+    line-height: 1.5;
+}
+.shop_list_box h4{
+    color: #334D2B;
+    font-size: 28px;
+    background: #F7DA95;
+    max-width: 900px;
+    padding: 16px 16px;
+    margin-bottom: 24px;
+}
+.shop_list_box_items img{
+    max-width: 400px;
+    width: 100%;
+    margin-right: 14px;
+}
+.shop_list_box_items{
+    display: flex; 
+    align-items: center; 
+
+}
+.shop_list_box_items p{
+    display: block;
+    color: #334D2B;
+    font-size: 24px;
+    border: 1px solid #F7DA95;
+    background: #B9C448;
+    width: 220px;
+    padding: 14px 30px;
+    margin-bottom: 14px;
+}
+@media (max-width:768px){
+    .car_box{
+        width: 50%;
+    }
+    .shop_list_box_items{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+    .shop_list_box_items img{
+        margin-bottom: 14px;
+    }
+}
